@@ -1,0 +1,23 @@
+.modal {
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: wheat;
+  width: 90%;
+  height: 10rem;
+  border-radius: 25px;
+  /*Alinear elementos dentro del modal*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hangmanModal {
+  flex-direction: column;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

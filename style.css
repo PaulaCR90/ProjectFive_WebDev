@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@300;700&display=swap');
+
+:root {
+  /*Colors*/
+  /*Spacings*/
+  /*Fonts*/
+  font-family: Genos, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(font-family);
+}
