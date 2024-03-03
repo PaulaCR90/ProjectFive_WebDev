@@ -132,17 +132,7 @@ export const handleClick = (e, sequences, selectedColors, currentSequence) => {
   }
 };
 
+//Cambios que hacer
+//* Separar en componentes pequeños.
+//? Añadir opciones de secuencias crecientes (1 color, 2 colores, 3 colores...) para aumentar la dificultad.
 //? Crear un simbolo de información que, al hacer hover, muestre un modal que explique el juego, y al quitar el hover se quite el modal. PARA TODOS LOS JUEGOS
-// seleccionar una secuencia aleatoria del array
-// que la secuencia se reproduzca en el tablero para que la vea el usuario
-// H3 que indique si es el turno del jugador o si hay que esperar a ver la secuencia aleatoria
-// Array vacío que vaya recogiendo las secuencias creadas por el usuario
-// Comparacion de la secuencia aleatoria con la secuencia creada por el usuario
-// Crear un marcador 'secuencias acertadas 0/10' que vaya cambiando cada vez que el usuario acierte una
-// Crear la posibilidad de hacer la misma secuencia en el botón de reintentar del modalWinner
-// Botón backHome
-// Botón reiniciar partida
-// Modal winner
-// - cuando consiga una secuencia ('muy bien! a por la siguiente secuencia') que dure tres segundos
-// - cuando falle una secuencia ('Vaya! La secuencia no es igual' + botón de reintentar + botón de reiniciar)
-// - cuando consiga todas las secuencias ('Enhorabuena! Has superado todos los retos' + botón de reiniciar + botón de backhome)

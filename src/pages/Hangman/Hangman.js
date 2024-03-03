@@ -4,6 +4,8 @@ import { Keyboard, hangmanWords, homeCards } from '../../sources/sources';
 import './Hangman.css';
 
 //! Salta el modal winner al reiniciar partida de forma aleatoria. ??????????????????????????????????
+//Cambios que hacer
+//* Separar en componentes pequeños.
 let guessedLetters = [];
 
 export const createHangman = () => {
@@ -145,6 +147,3 @@ export const Hangman = (tries) => {
 
   return Hangman;
 };
-
-//Cuando los intentos lleguen a 0 => OpenModal(Has perdido, la palabra era: 'palabra'; botón de reiniciar partida, botón de volver a la home)
-//Cuando la palabra se acierte => OpenModal(winner) + reiniciar juego + volver a la home

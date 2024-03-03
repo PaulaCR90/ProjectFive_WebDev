@@ -10,5 +10,5 @@ export const createTictactoe = () => {
   article.innerHTML = '';
   article.appendChild(game);
 };
-//Cambios
+//Cambios que hacer
 //! No dejar jugar hasta que seleccione un jugador.
