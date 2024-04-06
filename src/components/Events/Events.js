@@ -1,4 +1,4 @@
-import { createHangman } from '../../pages/Hangman/Hangman';
+import { createHangman } from '../../pages/Hangman/CreateHangman';
 import { createSimonSays } from '../../pages/SimonSays/SimonSays';
 import { createTictactoe } from '../../pages/Tictactoe/CreateTictactoe';
 

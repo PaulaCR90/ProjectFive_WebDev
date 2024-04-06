@@ -44,3 +44,7 @@
 .turnOption > .symbols {
   width: 2.5rem;
 }
+
+.cell > img {
+  width: 4rem;
+}

@@ -1,14 +1,10 @@
 footer {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background-color: forestgreen;
-  /* News */
+  position: absolute;
   bottom: 0;
-  position: fixed;
   width: 100%;
+  background-color: forestgreen;
+  text-align: center;
+  padding: 10px;
 }
 
 .mediaImages {

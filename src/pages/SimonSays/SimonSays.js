@@ -34,7 +34,7 @@ export const SimonSays = () => {
   sequences.textContent = '0/10 sequences solved!';
   //crear tablero con cuatro colores
   const table = document.createElement('div');
-  table.classList = 'table simonTable';
+  table.classList = 'simonTable';
   colors.forEach((color) => {
     const colorButton = document.createElement('img');
     colorButton.classList = `colorButton ${color.name}`;
@@ -100,18 +100,18 @@ export const handleClick = (e, sequences, selectedColors, currentSequence) => {
     selectedColors.every((value, i) => value === currentSequence[i])
   ) {
     console.log('¡Secuencia correcta!');
-    if (sequencesEqual === 1) {
+    if (sequencesEqual === 10) {
       const start = document.querySelector('.start');
       start.remove();
       sequencesEqual++;
       sequences.textContent = `${sequencesEqual}/10 sequences solved!`;
       const game = document.querySelector('article');
-      game.appendChild(winnerModal(false, true, false));
+      game.appendChild(winnerModal(false, false, true));
     } else if (sequencesEqual < 9) {
       sequencesEqual++;
       sequences.textContent = `${sequencesEqual}/10 sequences solved!`;
       const game = document.querySelector('article');
-      game.appendChild(winnerModal(false, false, false, false));
+      game.appendChild(winnerModal(false, false, false));
       setTimeout(() => {
         const modal = document.querySelector('.modal');
         modal.remove();

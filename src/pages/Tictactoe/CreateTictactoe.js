@@ -1,14 +1,11 @@
+import { resetTable } from '../../components/ResetTable/ResetTable';
 import { Tictactoe } from '../../components/Tictactoe/Tictactoe';
 import './CreateTictactoe.css';
-
-//? La primera vez que se juega después de actualizar la página no funciona nada.
-//? No puedo separar Tictactoe de PrintAndChange por el currentPlayer.
 
 export const createTictactoe = () => {
   const article = document.querySelector('.articleContainer');
   const game = Tictactoe();
+  resetTable(game.table);
   article.innerHTML = '';
   article.appendChild(game);
 };
-//Cambios que hacer
-//! No dejar jugar hasta que seleccione un jugador.

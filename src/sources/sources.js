@@ -29,6 +29,18 @@ export const winnerOptions = [
   [2, 4, 6]
 ];
 
+export const table = {
+  0: null,
+  1: null,
+  2: null,
+  3: null,
+  4: null,
+  5: null,
+  6: null,
+  7: null,
+  8: null
+};
+
 export const hangmanWords = [
   'disciplina',
   'macarrones',
@@ -41,6 +53,8 @@ export const hangmanWords = [
   'madera',
   'termostato'
 ];
+
+export let guessedLetters = [];
 
 export const Keyboard = [
   ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
