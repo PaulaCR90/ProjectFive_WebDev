@@ -1,5 +1,5 @@
 import { createHangman } from '../../pages/Hangman/CreateHangman';
-import { createSimonSays } from '../../pages/SimonSays/SimonSays';
+import { createSimonSays } from '../../pages/SimonSays/CreateSimonSays';
 import { createTictactoe } from '../../pages/Tictactoe/CreateTictactoe';
 
 export const createEvents = () => {

@@ -2,7 +2,6 @@ import { CURRENT_PLAYER } from '../CURRENT_PLAYER/CURRENT_PLAYER';
 import './WinnerModal.css';
 
 export const winnerModal = (winner, randomWord, wrongSequence) => {
-  console.log('winnerModal');
   const modal = document.createElement('div');
   modal.className = 'modal';
   if (CURRENT_PLAYER && winner) {
@@ -17,7 +16,7 @@ export const winnerModal = (winner, randomWord, wrongSequence) => {
   } else if (!CURRENT_PLAYER && !winner && !randomWord && !wrongSequence) {
     modal.innerHTML = `<h3>Nice! You found the sequence!</h3>`;
   } else {
-    modal.innerHTML = `<h3>Oops! You got hanged...</h3><h4>The word was ${randomWord}</h4>`;
+    modal.innerHTML = `<h3>Oops! You got hanged...</h3><h4>The word was <span  class='word'>${randomWord}</span></h4>`;
     modal.classList = ' modal hangmanModal';
   }
 

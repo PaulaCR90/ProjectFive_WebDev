@@ -3,6 +3,7 @@ import './Home.css';
 
 export const createHome = () => {
   const gameCards$$ = document.createElement('section');
+  gameCards$$.className = 'homeSection';
   homeCards.forEach((element) => {
     const gameCard$$ = document.createElement('div');
     gameCard$$.classList = `card ${element.name}`;

@@ -9,7 +9,6 @@ export const Tictactoe = () => {
   const gamePage = document.createElement('section');
   const title$$ = document.createElement('h2');
   title$$.textContent = homeCards[0].name;
-  // const tableToCheck = Array(9).fill(null);
   gamePage.appendChild(title$$);
   gamePage.appendChild(TurnPad());
   gamePage.appendChild(Table());

@@ -2,10 +2,24 @@
 
 :root {
   /*Colors*/
+  --rtc-red: #9a0000;
+  --rtc-yellow: #dfdb84;
+  --rtc-blue: #768cdb;
+  --rtc-orange: #ff6522;
+  --rtc-pink: #f2a6a6;
+  --rtc-black: #000000;
+  --rtc-green: rgb(57, 105, 49);
   /*Spacings*/
+  --rtc-xs-spacing: 0.25rem;
+  --rtc-s-spacing: 0.5rem;
+  --rtc-m-spacing: 1rem;
+  --rtc-l-spacing: 2rem;
+  --rtc-xl-spacing: 5rem;
   /*Fonts*/
   font-family: Genos, sans-serif;
-
+  line-height: 1.5;
+  font-weight: 400;
+  /*Extra*/
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,12 +34,20 @@
   box-sizing: border-box;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+#app {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rtc-s-spacing);
 }
 
-body {
-  margin: 0;
-  padding-bottom: 50px; /* Altura del footer */
+.articleContainer {
+  min-height: 68svh;
+  height: max-content;
+}
+
+@media screen and (min-width: 541px) {
+  .articleContainer {
+    min-height: 75svh;
+    height: max-content;
+  }
 }

@@ -8,14 +8,16 @@
 }
 
 .table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.buttonContainer {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .turns {
-  padding-bottom: 1rem;
+  padding-bottom: var(--rtc-m-spacing);
   height: 8rem;
   width: 100%;
   display: flex;
@@ -25,6 +27,9 @@
 }
 
 .turnOption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 3rem;
   height: 3rem;
   border: 0;
@@ -33,15 +38,11 @@
 }
 
 .turnOption:hover {
-  background-color: grey;
+  background-color: var(--rtc-pink);
   border-radius: 50%;
 }
 
 .symbols {
-  width: 4rem;
-}
-
-.turnOption > .symbols {
   width: 2.5rem;
 }
 

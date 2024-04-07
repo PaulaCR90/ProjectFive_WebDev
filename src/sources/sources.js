@@ -1,3 +1,4 @@
+// Home's sources
 export const homeCards = [
   {
     name: 'Tictactoe',
@@ -16,6 +17,7 @@ export const homeCards = [
   }
 ];
 
+// Tictactoe's sources
 export const turnOptions = ['logo', 'crash'];
 
 export const winnerOptions = [
@@ -41,6 +43,7 @@ export const table = {
   8: null
 };
 
+// Hangman's sources
 export const hangmanWords = [
   'disciplina',
   'macarrones',
@@ -62,6 +65,7 @@ export const Keyboard = [
   ['z', 'x', 'c', 'v', 'b', 'n', 'm']
 ];
 
+// Simon's sources
 export const colors = [
   {
     name: 'azul',
@@ -94,6 +98,7 @@ export const sequences = [
   ['rojo', 'verde', 'azul', 'amarillo', 'azul', 'verde']
 ];
 
+// Footer's sources
 export const FooterInfo = [
   {
     mediaHref: 'mailto:p.a.castrorodriguez@gmail.com',

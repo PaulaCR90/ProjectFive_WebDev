@@ -1,0 +1,12 @@
+.button {
+  margin: var(--rtc-s-spacing) 0;
+  padding: var(--rtc-xs-spacing) var(--rtc-s-spacing);
+  border-radius: 25px;
+  background-color: var(--rtc-yellow);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--rtc-black);
+  color: var(--rtc-yellow);
+}

@@ -1,5 +1,6 @@
 import { guessedLetters } from '../../sources/sources';
 import { CheckWinner } from '../CheckWinner/CheckWinner';
+import { GetLetterPostions } from '../GetLetterPositions/GetLetterPositions';
 import { winnerModal } from '../WinnerModal/WinnerModal';
 
 export const handleKeyboard = (
@@ -12,43 +13,30 @@ export const handleKeyboard = (
 ) => {
   const letter = element;
   let positions = [];
-
-  for (let i = 0; i < randomWord.length; i++) {
-    if (randomWord[i] === letter) {
-      positions.push(i + 1);
-    }
-  }
-
+  GetLetterPostions(randomWord, positions, letter);
+  const game = document.querySelector('article');
   if (positions.length > 0) {
     positions.forEach((item) => {
       const positionElementId = `[id="${item}"]`;
       const div = document.querySelector(positionElementId);
       div.textContent = letter.toUpperCase();
     });
-
     key.className = 'correctLetter';
     key.disabled = true;
-
     guessedLetters.push(letter);
-
-    let winner = CheckWinner(randomWord);
-    if (winner) {
+    if (CheckWinner(randomWord)) {
       setTimeout(() => {
-        const modal = winnerModal(winner, false, false);
-        const game = document.querySelector('article');
-        game.appendChild(modal);
+        game.appendChild(winnerModal(true, false, false));
       }, 25);
     }
   } else {
     tries = tries - 1;
-    const remainingTryies = tries;
-    tryiesElement.textContent = `${remainingTryies} tries remaining!`;
+    tryiesElement.textContent = `${tries} tries remaining!`;
     key.className = 'wrongLetter';
     key.disabled = true;
-    image$$.src = `../../../public/assets/image${remainingTryies}.png`;
+    image$$.src = `../../../public/assets/image${tries}.png`;
     if (tries === 0) {
       setTimeout(() => {
-        const game = document.querySelector('article');
         game.appendChild(winnerModal(false, randomWord, false));
       }, 25);
     }

@@ -2,11 +2,11 @@
   position: absolute;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.9);
-  color: wheat;
+  color: var(--rtc-pink);
   width: 90%;
   height: 10rem;
   border-radius: 25px;
-  /*Alinear elementos dentro del modal*/
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,4 +20,15 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.word {
+  color: var(--rtc-red);
+}
+
+@media screen and (min-width: 741px) {
+  .modal {
+    width: 50%;
+    height: 12rem;
+  }
 }
