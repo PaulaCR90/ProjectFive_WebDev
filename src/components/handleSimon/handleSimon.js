@@ -5,7 +5,7 @@ import { WrongSequenceModal } from '../WrongSequenceModal/WrongSequenceModal';
 
 let sequencesEqual = 0;
 export const handleClick = (e, sequences, selectedColors) => {
-  console.log(e.target);
+  const colorImage = e.target;
   setTimeout(() => {
     colorImage.style.width = '90%';
   }, 0);
