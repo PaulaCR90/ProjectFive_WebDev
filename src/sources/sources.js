@@ -3,17 +3,17 @@ export const homeCards = [
   {
     name: 'Tictactoe',
     description: 'Get three of the same symbol in a row!',
-    image: '../../public/assets/tictactoe.png'
+    image: './assets/tictactoe.png'
   },
   {
     name: 'Hangman',
     description: 'Guess the hidden word before the whole man is hanged',
-    image: '../../public/assets/hangman.jpg'
+    image: './assets/hangman.jpg'
   },
   {
     name: 'Simon says',
     description: 'Repeat the color sequence after de computer',
-    image: '../../public/assets/simon.png'
+    image: './assets/simon.png'
   }
 ];
 
@@ -45,16 +45,26 @@ export const table = {
 
 // Hangman's sources
 export const hangmanWords = [
-  'disciplina',
-  'macarrones',
-  'banda',
-  'quieto',
-  'cocodrilo',
-  'furioso',
-  'hoyo',
+  'discipline',
+  'noodles',
+  'band',
+  'quiet',
+  'crocodile',
+  'furious',
+  'hole',
   'tractor',
-  'madera',
-  'termostato'
+  'wood',
+  'thermostat',
+  'climate',
+  'patience',
+  'chicken',
+  'computer',
+  'handyman',
+  'freak',
+  'curious',
+  'sword',
+  'knight',
+  'godess'
 ];
 
 export let guessedLetters = [];
@@ -69,33 +79,53 @@ export const Keyboard = [
 export const colors = [
   {
     name: 'azul',
-    image: '../../public/assets/azul.png'
+    image: './assets/azul.png'
   },
   {
     name: 'verde',
-    image: '../../public/assets/verde.png'
+    image: './assets/verde.png'
   },
   {
     name: 'rojo',
-    image: '../../public/assets/rojo.png'
+    image: './assets/rojo.png'
   },
   {
     name: 'amarillo',
-    image: '../../public/assets/amarillo.png'
+    image: './assets/amarillo.png'
   }
 ];
 
 export const sequences = [
-  ['azul', 'verde', 'rojo', 'amarillo', 'verde', 'azul'],
-  ['verde', 'rojo', 'azul', 'amarillo', 'azul', 'verde'],
-  ['rojo', 'azul', 'verde', 'amarillo', 'verde', 'rojo'],
-  ['amarillo', 'verde', 'rojo', 'azul', 'verde', 'azul'],
-  ['rojo', 'verde', 'amarillo', 'azul', 'verde', 'azul'],
-  ['verde', 'azul', 'amarillo', 'rojo', 'azul', 'verde'],
-  ['azul', 'rojo', 'verde', 'amarillo', 'verde', 'azul'],
-  ['amarillo', 'rojo', 'verde', 'azul', 'verde', 'azul'],
-  ['verde', 'azul', 'rojo', 'amarillo', 'azul', 'verde'],
-  ['rojo', 'verde', 'azul', 'amarillo', 'azul', 'verde']
+  ['verde', 'azul', 'rojo', 'verde', 'amarillo', 'azul'],
+  ['azul', 'rojo', 'verde', 'azul', 'verde', 'rojo'],
+  ['rojo', 'azul', 'verde', 'amarillo', 'azul', 'verde'],
+  ['amarillo', 'rojo', 'verde', 'azul', 'verde', 'rojo'],
+  ['verde', 'rojo', 'amarillo', 'azul', 'azul', 'verde'],
+  ['azul', 'verde', 'rojo', 'verde', 'rojo', 'amarillo'],
+  ['rojo', 'verde', 'azul', 'azul', 'verde', 'amarillo'],
+  ['amarillo', 'verde', 'rojo', 'verde', 'azul', 'azul'],
+  ['verde', 'azul', 'rojo', 'azul', 'verde', 'amarillo'],
+  ['azul', 'verde', 'rojo', 'rojo', 'amarillo', 'verde'],
+  ['rojo', 'verde', 'azul', 'amarillo', 'verde', 'azul'],
+  ['amarillo', 'azul', 'verde', 'rojo', 'azul', 'verde'],
+  ['verde', 'rojo', 'azul', 'azul', 'verde', 'rojo'],
+  ['azul', 'verde', 'rojo', 'verde', 'amarillo', 'azul'],
+  ['rojo', 'azul', 'verde', 'amarillo', 'verde', 'azul'],
+  ['amarillo', 'rojo', 'verde', 'azul', 'azul', 'verde'],
+  ['verde', 'azul', 'rojo', 'rojo', 'verde', 'amarillo'],
+  ['azul', 'verde', 'rojo', 'azul', 'verde', 'rojo'],
+  ['rojo', 'verde', 'amarillo', 'verde', 'azul', 'azul'],
+  ['amarillo', 'azul', 'rojo', 'verde', 'rojo', 'verde'],
+  ['verde', 'rojo', 'azul', 'amarillo', 'verde', 'azul'],
+  ['azul', 'verde', 'rojo', 'azul', 'rojo', 'amarillo'],
+  ['rojo', 'verde', 'azul', 'verde', 'amarillo', 'azul'],
+  ['amarillo', 'azul', 'verde', 'rojo', 'verde', 'rojo'],
+  ['verde', 'rojo', 'amarillo', 'azul', 'azul', 'verde'],
+  ['azul', 'verde', 'rojo', 'rojo', 'verde', 'amarillo'],
+  ['rojo', 'azul', 'verde', 'amarillo', 'azul', 'verde'],
+  ['amarillo', 'rojo', 'verde', 'azul', 'verde', 'rojo'],
+  ['verde', 'azul', 'rojo', 'verde', 'azul', 'amarillo'],
+  ['azul', 'verde', 'rojo', 'azul', 'verde', 'amarillo']
 ];
 
 // Footer's sources

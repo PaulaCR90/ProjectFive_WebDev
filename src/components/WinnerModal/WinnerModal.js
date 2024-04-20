@@ -1,4 +1,4 @@
-import { CURRENT_PLAYER } from '../CURRENT_PLAYER/CURRENT_PLAYER';
+import { CURRENT_PLAYER } from '../../data/CURRENT_PLAYER/CURRENT_PLAYER';
 import './WinnerModal.css';
 
 export const winnerModal = (winner, randomWord, wrongSequence) => {
@@ -6,7 +6,7 @@ export const winnerModal = (winner, randomWord, wrongSequence) => {
   modal.className = 'modal';
   if (CURRENT_PLAYER && winner) {
     const lastPlayer = CURRENT_PLAYER === 'logo' ? 'crash' : 'logo';
-    modal.innerHTML = `<h3>Congratulations,</h3><img class='symbols' src='../../../public/assets/${lastPlayer}.png' /><h3> won!</h3>`;
+    modal.innerHTML = `<h3>Congratulations,</h3><img class='symbols' src='./assets/${lastPlayer}.png' /><h3> won!</h3>`;
   } else if (!CURRENT_PLAYER && winner) {
     modal.innerHTML = `<h3>Congratulations, you won!</h3>`;
   } else if (CURRENT_PLAYER && !winner) {

@@ -12,9 +12,7 @@ export const TurnPad = () => {
   turnOptions.forEach((element) => {
     const playerButton = document.createElement('button');
     const playerImage =
-      element === 'logo'
-        ? '../../../public/assets/logo.png'
-        : '../../../public/assets/crash.png';
+      element === 'logo' ? './assets/logo.png' : './assets/crash.png';
     playerButton.innerHTML = `<img class="symbols" src="${playerImage}" alt="${element}" />`;
     playerButton.className = 'turnOption';
     playerButton.value = element;

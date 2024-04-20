@@ -9,7 +9,6 @@ import './SimonSays.css';
 
 export const SimonSays = () => {
   let selectedColors = [];
-  let currentSequence = [];
   const Simon = document.createElement('section');
   Simon.className = 'simonContainer';
   const title$$ = document.createElement('h2');
@@ -20,9 +19,9 @@ export const SimonSays = () => {
   const sequences = document.createElement('h3');
   sequences.textContent = '0/10 sequences solved!';
   Simon.appendChild(title$$);
-  Simon.appendChild(NextSequenceButton(currentSequence, turn));
+  Simon.appendChild(NextSequenceButton(turn));
   Simon.appendChild(turn);
-  Simon.appendChild(SimonTable(sequences, selectedColors, currentSequence));
+  Simon.appendChild(SimonTable(sequences, selectedColors));
   Simon.appendChild(sequences);
   Simon.appendChild(CreateResetButton(createSimonSays));
   Simon.appendChild(CreateHomeButton());

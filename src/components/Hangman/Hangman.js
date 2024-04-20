@@ -14,7 +14,7 @@ export const Hangman = (tries) => {
   title$$.textContent = homeCards[1].name;
   const image$$ = document.createElement('img');
   image$$.className = 'hangmanIcon';
-  image$$.src = '../../../public/assets/image6.png';
+  image$$.src = './assets/image6.png';
   const tryiesElement = document.createElement('h3');
   tryiesElement.textContent = `${tries} tries remaining!`;
   Hangman.appendChild(title$$);

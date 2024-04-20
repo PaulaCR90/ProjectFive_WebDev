@@ -1,5 +1,5 @@
 import { table } from '../../sources/sources';
-import { setCurrentPlayer } from '../CURRENT_PLAYER/CURRENT_PLAYER';
+import { setCurrentPlayer } from '../../data/CURRENT_PLAYER/CURRENT_PLAYER';
 
 export const resetTable = () => {
   setCurrentPlayer('');

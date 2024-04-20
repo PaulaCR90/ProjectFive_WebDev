@@ -1,7 +1,7 @@
 import {
   CURRENT_PLAYER,
   setCurrentPlayer
-} from '../CURRENT_PLAYER/CURRENT_PLAYER';
+} from '../../data/CURRENT_PLAYER/CURRENT_PLAYER';
 import { endGameTester } from '../EndGameTester/EndGameTester';
 import { winnerModal } from '../WinnerModal/WinnerModal';
 import { winnerTester } from '../WinnerTester/WinnerTester';
@@ -12,7 +12,7 @@ export const printAndChange = (square, table) => {
     return;
   }
   const img$$ = document.createElement('img');
-  img$$.src = `../../public/assets/${CURRENT_PLAYER}.png`;
+  img$$.src = `./assets/${CURRENT_PLAYER}.png`;
   const index = square.dataset.index;
   table[index] = CURRENT_PLAYER;
   square.appendChild(img$$);

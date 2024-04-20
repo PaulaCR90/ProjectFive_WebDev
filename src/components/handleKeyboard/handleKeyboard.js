@@ -1,3 +1,4 @@
+import { setCurrentPlayer } from '../../data/CURRENT_PLAYER/CURRENT_PLAYER';
 import { guessedLetters } from '../../sources/sources';
 import { CheckWinner } from '../CheckWinner/CheckWinner';
 import { GetLetterPostions } from '../GetLetterPositions/GetLetterPositions';
@@ -25,6 +26,7 @@ export const handleKeyboard = (
     key.disabled = true;
     guessedLetters.push(letter);
     if (CheckWinner(randomWord)) {
+      setCurrentPlayer('');
       setTimeout(() => {
         game.appendChild(winnerModal(true, false, false));
       }, 25);
@@ -34,7 +36,7 @@ export const handleKeyboard = (
     tryiesElement.textContent = `${tries} tries remaining!`;
     key.className = 'wrongLetter';
     key.disabled = true;
-    image$$.src = `../../../public/assets/image${tries}.png`;
+    image$$.src = `./assets/image${tries}.png`;
     if (tries === 0) {
       setTimeout(() => {
         game.appendChild(winnerModal(false, randomWord, false));
