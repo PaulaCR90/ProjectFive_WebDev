@@ -8,7 +8,7 @@ export const handleClick = (e, sequences, selectedColors) => {
   const colorImage = e.target;
   setTimeout(() => {
     colorImage.style.width = '90%';
-  }, 0);
+  }, 25);
   const colorValue = e.target.getAttribute('data-value');
   selectedColors.push(colorValue);
   console.log(selectedColors);
