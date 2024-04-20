@@ -47,7 +47,14 @@
 
 @media screen and (min-width: 541px) {
   .articleContainer {
-    min-height: 82svh;
+    min-height: 81svh;
+    height: max-content;
+  }
+}
+
+@media screen and (min-width: 1541px) {
+  .articleContainer {
+    min-height: 85svh;
     height: max-content;
   }
 }
