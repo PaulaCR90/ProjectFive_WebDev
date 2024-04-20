@@ -6,9 +6,10 @@ import { WrongSequenceModal } from '../WrongSequenceModal/WrongSequenceModal';
 let sequencesEqual = 0;
 export const handleClick = (e, sequences, selectedColors) => {
   const colorImage = e.target;
+  colorImage.style.width = '90%';
   setTimeout(() => {
-    colorImage.style.width = '90%';
-  }, 25);
+    colorImage.style.width = '100%';
+  }, 500);
   const colorValue = e.target.getAttribute('data-value');
   selectedColors.push(colorValue);
   console.log(selectedColors);
