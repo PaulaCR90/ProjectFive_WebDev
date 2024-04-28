@@ -22,8 +22,8 @@ export const printAndChange = (square, table) => {
   setTimeout(() => {
     const winner = winnerTester(table);
     if (winner) {
-      const turns = document.querySelector('.turns');
-      turns.remove();
+      // const turns = document.querySelector('.turns');
+      // turns.remove();
       const game = document.querySelector('article');
       game.appendChild(winnerModal(winner));
     }
