@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: var(--rtc-s-spacing);
   height: 3rem;
   margin: var(--rtc-s-spacing);
 }
@@ -48,7 +48,7 @@
 }
 
 .correctLetter {
-  background-color: rgb(75, 161, 72);
+  background-color: var(--rtc-bright-green);
 }
 
 .wrongLetter {

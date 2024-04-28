@@ -22,7 +22,7 @@ section {
   width: 90%;
   height: 8rem;
   margin: 0 var(--rtc-xs-spacing);
-  padding: 0.5rem;
+  padding: var(--rtc-s-spacing);
   border: 2px solid var(--rtc-blur-white);
 }
 

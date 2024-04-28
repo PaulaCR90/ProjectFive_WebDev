@@ -5,11 +5,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 1.5rem;
+  padding: var(--rtc-m-spacing);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: var(--rtc-black);
 
   background-color: transparent;
   border: 0;

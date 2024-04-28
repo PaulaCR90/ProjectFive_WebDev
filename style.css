@@ -1,16 +1,14 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Genos:wght@300;700&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
   /*Colors*/
   --rtc-blur-white: rgba(255, 255, 255, 0.6);
   --rtc-red: #9a0000;
-  --rtc-yellow: #dfdb84;
-  --rtc-blue: #768cdb;
-  --rtc-orange: #ff6522;
   --rtc-pink: #f2a6a6;
+  --rtc-orange: #ffb158;
   --rtc-black: #000000;
-  --rtc-green: rgb(57, 105, 49);
+  --rtc-green: #396931;
+  --rtc-bright-green: #4ba148;
   /*Spacings*/
   --rtc-xs-spacing: 0.25rem;
   --rtc-s-spacing: 0.5rem;
@@ -18,9 +16,7 @@
   --rtc-l-spacing: 2rem;
   --rtc-xl-spacing: 5rem;
   /*Fonts*/
-
   font-family: 'Press Start 2P', cursive;
-  /*--rtc-font-family: Genos, sans-serif;*/
   line-height: 1.5;
   font-weight: 400;
   /*Extra*/
