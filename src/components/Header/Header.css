@@ -5,4 +5,5 @@ header {
   height: 5rem;
   background-color: var(--rtc-blur-white);
   color: var(--rtc-black);
+  font-size: 0.6rem;
 }

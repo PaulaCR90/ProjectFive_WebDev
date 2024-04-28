@@ -41,29 +41,30 @@
 #app {
   display: flex;
   flex-direction: column;
-  gap: var(--rtc-s-spacing);
   background-image: url(/assets/Background-landscape.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100svh;
+  width: 100svw;
 }
 
 .articleContainer {
-  min-height: 72svh;
+  padding-top: var(--rtc-m-spacing);
+  display: flex;
+  justify-content: center;
+  min-height: 70svh;
   height: max-content;
 }
 
 @media screen and (min-width: 541px) {
   .articleContainer {
     min-height: 75svh;
-    height: max-content;
   }
 }
 
 @media screen and (min-width: 1541px) {
   .articleContainer {
     min-height: 81svh;
-    height: max-content;
   }
 }

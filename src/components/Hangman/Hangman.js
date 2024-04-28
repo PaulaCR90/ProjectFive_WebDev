@@ -10,12 +10,14 @@ import { CreateHomeButton } from '../CreateHomeButton/CreateHomeButton';
 export const Hangman = (tries) => {
   const randomWord = GetRandomWord();
   const Hangman = document.createElement('section');
+  Hangman.className = 'HangmanSection';
   const title$$ = document.createElement('h2');
   title$$.textContent = homeCards[1].name;
   const image$$ = document.createElement('img');
   image$$.className = 'hangmanIcon';
   image$$.src = './assets/image6.png';
   const tryiesElement = document.createElement('h3');
+  tryiesElement.className = 'tries';
   tryiesElement.textContent = `${tries} tries remaining!`;
   Hangman.appendChild(title$$);
   Hangman.appendChild(image$$);

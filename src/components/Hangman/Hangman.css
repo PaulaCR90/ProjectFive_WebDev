@@ -2,11 +2,16 @@
   width: 1rem;
   height: 1rem;
   border-bottom: 1px solid var(--rtc-black);
-  font-size: 30px;
-  padding-bottom: 0.5rem;
+  font-size: 15px;
+  padding: var(--rtc-s-spacing) 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.tries {
+  margin-top: var(--rtc-s-spacing);
+  font-size: 11px;
 }
 
 .hintContainer {
@@ -15,10 +20,11 @@
   justify-content: center;
   gap: 0.5rem;
   height: 3rem;
+  margin: var(--rtc-s-spacing);
 }
 
 .hangmanIcon {
-  width: 10rem;
+  width: 8rem;
 }
 
 .keyButton,
@@ -38,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--rtc-m-spacing) 0;
+  padding: var(--rtc-xs-spacing) 0;
 }
 
 .correctLetter {
@@ -48,4 +54,18 @@
 .wrongLetter {
   background-color: var(--rtc-red);
   color: var(--rtc-black);
+}
+
+.HangmanSection {
+  height: 95%;
+  width: 16rem;
+  border-radius: 25px;
+  background-color: var(--rtc-blur-white);
+  padding: var(--rtc-s-spacing);
+}
+
+.HangmanSection > h2 {
+  text-decoration: underline;
+  font-size: 15px;
+  margin-bottom: var(--rtc-s-spacing);
 }
