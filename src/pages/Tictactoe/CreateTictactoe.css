@@ -49,3 +49,15 @@
 .cell > img {
   width: 4rem;
 }
+
+.TictacSection {
+  height: fit-content;
+  border-radius: 25px;
+  background-color: var(--rtc-blur-white);
+  padding: var(--rtc-xl-spacing);
+}
+
+.TictacSection > h2 {
+  text-decoration: underline;
+  margin-bottom: var(--rtc-l-spacing);
+}

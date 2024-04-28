@@ -3,6 +3,6 @@ header {
   align-items: center;
   justify-content: center;
   height: 5rem;
-  background-color: var(--rtc-orange);
+  background-color: var(--rtc-blur-white);
   color: var(--rtc-black);
 }

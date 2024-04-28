@@ -1,21 +1,28 @@
 footer {
   display: flex;
   flex-direction: column;
-  background-color: var(--rtc-green);
-  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--rtc-blur-white);
+  gap: var(--rtc-m-spacing);
   padding: var(--rtc-m-spacing);
-  gap: var(--rtc-xs-spacing);
+  height: 13svh;
+  width: 100svw;
+  bottom: 0;
+  position: fixed;
+  font-size: 10px;
 }
 
 .mediaImages {
   border-radius: 100%;
-  width: 2.5rem;
+  width: 2rem;
 }
 
 footer > ul {
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 @media screen and (min-width: 541px) {

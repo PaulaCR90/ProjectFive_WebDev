@@ -7,6 +7,7 @@ import { CreateResetButton } from '../CreateResetButton/CreateResetButton';
 
 export const Tictactoe = () => {
   const gamePage = document.createElement('section');
+  gamePage.className = 'TictacSection';
   const title$$ = document.createElement('h2');
   title$$.textContent = homeCards[0].name;
   gamePage.appendChild(title$$);

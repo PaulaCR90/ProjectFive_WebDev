@@ -6,24 +6,42 @@ section {
   cursor: pointer;
 }
 
+.homeSection {
+  justify-content: space-around;
+}
+
 .card {
-  width: min-content;
+  background-color: var(--rtc-blur-white);
+  border-radius: 25px;
+  font-size: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   gap: var(--rtc-m-spacing);
-  padding: var(--rtc-m-spacing) 0;
+  height: 8rem;
+  width: 34rem;
+  margin: 0 var(--rtc-xs-spacing);
+  padding: 0.5rem;
+  padding-bottom: 8rem;
+  border: 2px solid var(--rtc-blur-white);
+}
+
+.card:hover {
+  border: 2px solid var(--rtc-green);
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--rtc-l-spacing);
+}
+
+.gameTitles {
+  text-decoration: underline;
+  font-size: 1rem;
 }
 
 .gameImage {
-  width: 15rem;
-}
-
-@media screen and (min-width: 741px) {
-  .homeSection {
-    display: flex;
-    flex-direction: row;
-    align-items: first baseline;
-    justify-content: space-around;
-    width: 90%;
-  }
+  width: 4rem;
 }

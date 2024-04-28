@@ -1,12 +1,33 @@
+/*.button:hover {
+  background-color: var(--rtc-black);
+  color: var(--rtc-yellow);
+}*/
 .button {
-  margin: var(--rtc-s-spacing) 0;
-  padding: var(--rtc-xs-spacing) var(--rtc-s-spacing);
-  border-radius: 25px;
-  background-color: var(--rtc-yellow);
+  height: 2rem;
+  width: 9rem;
+  background-image: url(/assets/button.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+
+  background-color: transparent;
+  border: 0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6rem;
+  margin-top: 0.3rem;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: var(--rtc-black);
-  color: var(--rtc-yellow);
+  color: var(--rtc-blur-white);
+}
+
+.button:active {
+  height: 1.9rem;
+  width: 8.5rem;
 }

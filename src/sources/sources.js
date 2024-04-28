@@ -8,12 +8,12 @@ export const homeCards = [
   {
     name: 'Hangman',
     description: 'Guess the hidden word before the whole man is hanged',
-    image: './assets/hangman.jpg'
+    image: '../../public/assets/image0.png'
   },
   {
     name: 'Simon says',
-    description: 'Repeat the color sequence after de computer',
-    image: './assets/simon.png'
+    description: 'Repeat the color sequence after the computer',
+    image: '../../public/assets/simon-says-1.png'
   }
 ];
 
